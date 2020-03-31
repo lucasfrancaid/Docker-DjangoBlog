@@ -12,7 +12,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{% url 'url_index' %}">Django's Blog</a>
+            <a class="navbar-brand" href="{% url 'url_home' %}">Django's Blog</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,28 +20,31 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'url_index' %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'url_create' %}">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'url_create' %}">Contact</a>
-                </li>
-                <!--
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'url_create' %}">New post</a>
+                    <a class="nav-link" href="{% url 'url_home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Category
+                    Manager
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <b style="margin-left: 20px;">Post</b>
+                    <a class="dropdown-item" href="{% url 'url_post_create' %}">Create Post</a>
+                    <a class="dropdown-item" href="{% url 'url_post_list' %}">Post's List</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <b style="margin-left: 20px;">Author</b>
+                    <a class="dropdown-item" href="{% url 'url_author_create' %}">Create Author</a>
+                    <a class="dropdown-item" href="{% url 'url_author_list' %}">Author's List</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'url_post_create' %}">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'url_author_create' %}">Contact</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'url_post_create' %}">New post</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

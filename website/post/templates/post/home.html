@@ -15,12 +15,13 @@
                 <div class="card-body">
                   <h5 class="card-title">{{ post.title }}</h5>
                   <p class="card-text">{{ post.subtitle }}</p>
-                  <a href="{% url 'url_read' post.id %}" class="btn btn-primary">See more</a>
+                  <a href="{% url 'url_post_read' post.id %}" class="btn btn-primary">See more</a>
                 </div>
               </div>
         </li>
         {% endfor %}
     </ul>
     </div>
+
 </div>
 {% endblock %}

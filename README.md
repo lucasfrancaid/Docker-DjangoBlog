@@ -56,7 +56,7 @@ $ git init
 $ git clone https://github.com/lucasfrancaid/DockerDjangoBlog
 </code></pre>
 
-Open workdir in terminal. Before run, you will should install docker-compose, run:
+Open workdir of DockerDjangoBlog in terminal (cmd). Before run docker, you will should install docker-compose, run:
 <pre><code>
 $ pip install -U docker-compose
 $ docker-compose --version
@@ -72,15 +72,15 @@ $ docker-compose up
 *Great, application running in a docker container!*
 
 
-When running the web and db container, run this command:
+While running the web and db container, open other terminal and run this command:
 <pre><code>
 $ docker exec -it website_web_1 python manage.py migrate
 $ docker exec -it website_web_1 python manage.py createsuperuser
-#set login and password for superuser admin
+# set login and password for superuser admin
 </code></pre>
 
 
-That's ok, application is running! Get your coffe and hands on!
+That's ok, application and containers is running! Get your coffe, ready your code and hands on!
 
 
 <!-- LICENSE -->
