@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lucasfrancaid/DockerDjangoBlog">
-    <img src="https://clouditate.com/wp-content/uploads/djangopostgresdockerandcompose.jpg" alt="Logo" width="80" height="80">
+    <img src="https://uploaddeimagens.com.br/images/002/561/380/full/Design_sem_nome.png?1585686482" alt="Logo" width="350" height="350">
   </a>
 
   <h3 align="center">Django's Blog</h3>
