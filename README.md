@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lucasfrancaid/DockerDjangoBlog">
-    <img src="https://uploaddeimagens.com.br/images/002/561/380/full/Design_sem_nome.png?1585686482" alt="Logo" width="350" height="350">
+    <img src="https://uploaddeimagens.com.br/images/002/562/736/full/Design_sem_nome_%281%29.png?1585753127" alt="Logo" width="350" height="350">
   </a>
 
   <h3 align="center">Django's Blog</h3>
@@ -50,13 +50,15 @@ This project was created to learn more about Django with Docker.
 ## How to use
 
 First, do you need clone this repository.
-For this, you will create a dir, and on dir, open any terminal (cmd, git bash, etc) and run these command:
+For this, you will create a dir, on dir open any terminal (cmd, git bash, etc) and run these command:
 <pre><code>
 $ git init
 $ git clone https://github.com/lucasfrancaid/DockerDjangoBlog
 </code></pre>
 
-Open workdir of DockerDjangoBlog in terminal (cmd). Before run docker, you will should install docker-compose, run:
+Open workdir of DockerDjangoBlog in terminal (cmd). *You need to have the Docker installed to proceed. If not, you can download it through this link: https://www.docker.com/products/docker-desktop*
+
+With Docker installed, you will should install docker-compose, run:
 <pre><code>
 $ pip install -U docker-compose
 $ docker-compose --version
@@ -69,7 +71,7 @@ $ docker-compose up
 </code></pre>
 
 
-*Great, application running in a docker container!*
+*Great, application's running in a docker container!*
 
 
 While running the web and db container, open other terminal and run this command:
@@ -80,7 +82,7 @@ $ docker exec -it website_web_1 python manage.py createsuperuser
 </code></pre>
 
 
-That's ok, application and containers is running! Get your coffe, ready your code and hands on!
+That's ok, application and containers is running! Get your coffee, ready your code and hands on!
 
 
 <!-- LICENSE -->
