@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/lucasfrancaid/DockerDjangoBlog">
-    <img src="https://uploaddeimagens.com.br/images/002/562/736/full/Design_sem_nome_%281%29.png?1585753127" alt="Logo" width="350" height="350">
+    <img src="https://uploaddeimagens.com.br/images/002/562/736/full/Design_sem_nome_%281%29.png?1585753127" alt="Logo" width="250" height="250">
   </a>
 
   <h3 align="center">Django's Blog</h3>
