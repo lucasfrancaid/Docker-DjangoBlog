@@ -1,0 +1,107 @@
+.btn-primary {
+    background-color: #092e20;
+    border-color: #092e20;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #092e20;
+    border-color: #8fb7a8;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #092e20;
+    border-color: #8fb7a8;
+}
+
+.btn-primary-delete {
+    color: #FFF;
+    background-color: #dd2323;
+    border-color: #dd2323;
+    transition: 0.2s;
+}
+
+.btn-primary-delete:hover {
+    color: #FFF;
+    background-color: #dd2323;
+    border-color: #f56b6b;
+}
+
+.btn-primary-delete:not(:disabled):not(.disabled):active{
+    background-color: #dd2323;
+    border-color: #f56b6b;
+}
+
+.container {
+    width: 10#f56b6b;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.container h1 {
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+
+.container .title-home {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.container .post-title h1 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.container .post-title h4 {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.container .post-author {
+    margin-top: 40px;
+}
+
+.container .post-author b {
+    font-size: 16pt;
+}
+
+.container .post-author a {
+    float: right;
+    margin-top: 10px;
+}
+
+.container .img-style img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container .card-index {
+    margin: 32px auto;
+    margin-right: 45px;
+}
+.container .card-index ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 10px; 
+    list-style: none;
+}
+
+.container .card-index ul li {
+    display: flex;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.container ul li button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: 0;
+}

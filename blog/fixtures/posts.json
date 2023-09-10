@@ -1,0 +1,165 @@
+[
+    {
+        "model": "authors.author",
+        "pk": 1,
+        "fields": {
+            "username": "john_doe",
+            "first_name": "John",
+            "last_name": "Doe",
+            "biography": "Passionate writer and developer",
+            "email": "john.doe@example.com",
+            "site": "https://www.johndoe.com",
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 1,
+        "fields": {
+            "background_url": "https://cdn.sanity.io/images/6icyfeiq/production/e1027869dfe74b69acfcc4616199e50f3df1f52d-2800x1318.png?w=952&h=448&q=75&fit=max&auto=format",
+            "title": "Introduction to FastAPI",
+            "subtitle": "Building web APIs with FastAPI",
+            "body": "FastAPI is a modern, fast (high-performance), web framework for building APIs...",
+            "author": 1,
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 2,
+        "fields": {
+            "username": "jane_smith",
+            "first_name": "Jane",
+            "last_name": "Smith",
+            "biography": "Tech enthusiast and blogger",
+            "email": "jane.smith@example.com",
+            "site": "https://www.janesmithblog.com",
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 2,
+        "fields": {
+            "background_url": "https://files.realpython.com/media/Real-Python-Tips-and-Tricks_Watermarked.ee4e4265c99b.jpg",
+            "title": "Python Tips and Tricks",
+            "subtitle": "Boosting your Python skills",
+            "body": "Discover useful Python tips and tricks to enhance your coding...",
+            "author": 2,
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 3,
+        "fields": {
+            "username": "alex_green",
+            "first_name": "Alex",
+            "last_name": "Green",
+            "biography": "Data scientist and AI enthusiast",
+            "email": "alex.green@example.com",
+            "site": "https://www.alexgreen.ai",
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 3,
+        "fields": {
+            "background_url": "https://miro.medium.com/v2/resize:fit:1358/1*cG6U1qstYDijh9bPL42e-Q.jpeg",
+            "title": "Machine Learning Fundamentals",
+            "subtitle": "A beginner's guide to ML",
+            "body": "Learn the basics of machine learning and start your journey into AI...",
+            "author": 3,
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 4,
+        "fields": {
+            "username": "mary_jones",
+            "first_name": "Mary",
+            "last_name": "Jones",
+            "biography": "Software engineer and open-source contributor",
+            "email": "mary.jones@example.com",
+            "site": "https://www.maryjones.dev",
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 4,
+        "fields": {
+            "background_url": "https://media.wired.com/photos/5f451500d741517d4f090371/master/w_2560%2Cc_limit/open-source.png",
+            "title": "Contributing to Open Source",
+            "subtitle": "How to get started with open-source projects",
+            "body": "Become an open-source contributor and make a positive impact on...",
+            "author": 4,
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 5,
+        "fields": {
+            "username": "sam_wilson",
+            "first_name": "Sam",
+            "last_name": "Wilson",
+            "biography": "Front-end developer and UI/UX enthusiast",
+            "email": "sam.wilson@example.com",
+            "site": "https://www.samwilson.design",
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 5,
+        "fields": {
+            "background_url": "https://www.b3net.com/wp-content/uploads/2023/02/Web-Design-Principles.jpg",
+            "title": "Design Principles for Web",
+            "subtitle": "Creating stunning user interfaces",
+            "body": "Explore key design principles and techniques for crafting...",
+            "author": 5,
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "authors.author",
+        "pk": 6,
+        "fields": {
+            "username": "lucasfrancaid",
+            "first_name": "Lucas",
+            "last_name": "França",
+            "biography": "Senior Software Developer at @Spotify",
+            "email": "lucas.franca@example.com",
+            "site": "https://lucasfrancaid.com.br",
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z"
+        }
+    },
+    {
+        "model": "posts.post",
+        "pk": 6,
+        "fields": {
+            "background_url": "https://raw.githubusercontent.com/azataiot/images/master/2021/09/09/cover.png",
+            "title": "Building a RESTful API with FastAPI and SQLAlchemy: A Step-by-Step Guide",
+            "subtitle": "Building Efficient RESTful APIs with FastAPI and SQLAlchemy: A Comprehensive Guide",
+            "body": "In today's digital world, creating a robust and efficient API is a fundamental skill for developers. FastAPI and SQLAlchemy are two powerful Python libraries that make the process of building APIs easier and more enjoyable. FastAPI excels in speed and ease of use, while SQLAlchemy provides a flexible and reliable way to work with databases. In this tutorial, we will walk you through the process of creating a RESTful API using FastAPI and SQLAlchemy.\n\n## Prerequisites\nBefore we get started, ensure you have the following prerequisites installed on your system:\n*   Python (3.7 or higher)\n*   Pip (Python package manager)\n*   A code editor or IDE of your choice (e.g., Visual Studio Code, PyCharm)\n*   Basic knowledge of Python and web APIs\n\n## Setting Up Your Project\nLet's begin by creating a new Python project directory and setting up a virtual environment. Open your terminal and run the following commands:\n```bash\nmkdir fastapi-sqlalchemy-api\ncd fastapi-sqlalchemy-api\npython -m venv venv source venv/bin/activate  # On Windows, use 'venv\\Scripts\\activate'\n```\n\nNow that you're inside your virtual environment, let's install the required libraries:\n```bash\npip install fastapi uvicorn sqlalchemy\n```\n\n## Creating a SQLAlchemy Model\nNext, we'll define a SQLAlchemy model for our API. In this example, we'll create a simple API for managing a list of tasks. Create a new file named `models.py` in your project directory and add the following code:\n```python\nfrom sqlalchemy import Column, Integer, String\nfrom sqlalchemy.ext.declarative import declarative_base\n\nBase = declarative_base()\n\nclass Task(Base):\n    __tablename__ = \"tasks\"\n    id = Column(Integer, primary_key=True, index=True)\n    title = Column(String, index=True)\n    description = Column(String)\n    done = Column(Boolean, default=False)\n```\n\nThis code defines a `Task` model with columns for `id`, `title`, `description`, and `done`.\n\n## Creating a FastAPI Application\nNow, let's create a FastAPI application and define our API endpoints. Create a new file named `main.py` in your project directory and add the following code:\n```python\nfrom fastapi import FastAPI, Depends, HTTPException\nfrom sqlalchemy.orm import Session\nfrom sqlalchemy import create_engine\nfrom sqlalchemy.orm import sessionmaker\n\nfrom models import Task, Base\n\napp = FastAPI()\n\n# Configure the database connection\nDATABASE_URL = \"sqlite:///./test.db\"\nengine = create_engine(DATABASE_URL)\nBase.metadata.create_all(bind=engine)\n\n# Create a session to interact with the database\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\n\n# Dependency to get the database session\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n```\n\nIn this code, we've created a FastAPI application and configured a SQLite database using SQLAlchemy. We've also defined a `get_db` function to handle database sessions.\n\n## Creating API Endpoints\nNow, let's create API endpoints to perform CRUD (Create, Read, Update, Delete) operations on tasks. Add the following code to your `main.py` file:\n```python\n@app.post(\"/tasks/\", response_model=Task)\ndef create_task(task: TaskCreate, db: Session = Depends(get_db)):\n    # Create a new task in the database\n    db_task = Task(**task.dict())\n    db.add(db_task)\n    db.commit()\n    db.refresh(db_task)\n    return db_task\n\n@app.get(\"/tasks/{task_id}\", response_model=Task)\ndef read_task(task_id: int, db: Session = Depends(get_db)):\n    # Retrieve a task by ID\n    task = db.query(Task).filter(Task.id == task_id).first()\n    if not task:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n    return task\n\n@app.put(\"/tasks/{task_id}\", response_model=Task)\ndef update_task(task_id: int, task: TaskUpdate, db: Session = Depends(get_db)):\n    # Update a task by ID\n    db_task = db.query(Task).filter(Task.id == task_id).first()\n    if not db_task:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n\n    for key, value in task.dict().items():\n        setattr(db_task, key, value)\n\n    db.commit()\n    db.refresh(db_task)\n    return db_task\n\n@app.delete(\"/tasks/{task_id}\", response_model=Task)\ndef delete_task(task_id: int, db: Session = Depends(get_db)):\n    # Delete a task by ID\n    db_task = db.query(Task).filter(Task.id == task_id).first()\n    if not db_task:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n\n    db.delete(db_task)\n    db.commit()\n    return db_task\n\n@app.get(\"/tasks/\", response_model=List[Task])\ndef read_tasks(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    # Retrieve a list of tasks with pagination\n    tasks = db.query(Task).offset(skip).limit(limit).all()\n    return tasks\n```\n\nIn this code, we've defined API endpoints for creating, reading, updating, and deleting tasks, as well as for retrieving a list of tasks with pagination.\n\n## Running the FastAPI Application\nTo run your FastAPI application, open your terminal and run the following command from your project directory:\n```bash\nuvicorn main:app --reload\n```\n\nThis command starts the development server, and you can access your API at [http://localhost:8000](http://localhost:8000) .\n\n## Testing the API\nYou can use tools like [httpie](https://httpie.io/) or [Postman](https://www.postman.com/) to test your API. Here are some example API requests:\n*   Create a task:\n    ```bash\n    curl -X POST -H \"Content-Type: application/json\" -d '{\"title\": \"Task 1\", \"description\": \"Description 1\"}' http://localhost:8000/tasks/\n    ```\n*   Read a task by ID:\n    ```bash\n    curl http://localhost:8000/tasks/1\n    ```\n*   Update a task by ID:\n    ```bash\n    curl -X PUT -H \"Content-Type: application/json\" -d '{\"title\": \"Updated Task 1\"}' http://localhost:8000/tasks/1\n    ```\n*   Delete a task by ID:\n    ```bash\n    curl -X DELETE http://localhost:8000/tasks/1\n    ```\n*   Retrieve a list of tasks with pagination:\n    ```bash\n    curl http://localhost:8000/tasks/?skip=0&limit=10\n    ```\n\n## Conclusion\nIn this tutorial, you've learned how to create a RESTful API using FastAPI and SQLAlchemy. You've set up a database, defined SQLAlchemy models, created API endpoints for CRUD operations, and tested your API. With FastAPI's simplicity and SQLAlchemy's flexibility, you can now build powerful and efficient APIs for your projects. Happy coding!",
+            "author": 6,
+            "created_at": "2023-09-09T10:00:00Z",
+            "updated_at": "2023-09-09T10:00:00Z",
+            "likes": 23
+        }
+    }
+]
