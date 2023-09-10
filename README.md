@@ -38,7 +38,7 @@ This project was created to learn more about Django with Docker.
 ## How to use
 First, do you need clone this repository:
 ```bash
-git clone https://github.com/lucasfrancaid/docker-blog
+git clone https://github.com/lucasfrancaid/django-blog
 ```
 
 In the repository root directory run:
