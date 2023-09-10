@@ -1,13 +1,13 @@
-from typing import Any
-from django.db import models
 from django.urls import reverse_lazy
 from django.views import generic
 
+from blog.mixins import AdminPermissionRequiredMixin
 from posts.models import Post
 from posts.forms import PostForm
 
 
-class ListView(generic.ListView):
+class ListView(AdminPermissionRequiredMixin, generic.ListView):
+    permission_required = "posts.view_post"
     model = Post
     template_name = "posts/list.html"
     context_object_name = "posts"
@@ -19,7 +19,8 @@ class DetailView(generic.DetailView):
     context_object_name = "post"
 
 
-class CreateView(generic.FormView, generic.CreateView):
+class CreateView(AdminPermissionRequiredMixin, generic.FormView, generic.CreateView):
+    permission_required = "posts.add_post"
     template_name = "posts/form.html"
     form_class = PostForm
     success_url = reverse_lazy("index")
@@ -29,7 +30,8 @@ class CreateView(generic.FormView, generic.CreateView):
         return super().form_valid(form)
 
 
-class UpdateView(generic.FormView, generic.UpdateView):
+class UpdateView(AdminPermissionRequiredMixin, generic.FormView, generic.UpdateView):
+    permission_required = "posts.change_post"
     template_name = "posts/form.html"
     form_class = PostForm
     context_object_name = "post"
@@ -40,6 +42,11 @@ class UpdateView(generic.FormView, generic.UpdateView):
         form.is_valid()
         return super().form_valid(form)
 
-class DeleteView(generic.DeleteView):
+
+class DeleteView(AdminPermissionRequiredMixin, generic.DeleteView):
+    permission_required = "posts.delete_post"
     model = Post
     success_url = reverse_lazy("index")
+    template_name = "posts/confirm_delete.html"
+    template_name_suffix = ""
+    context_object_name = "post"

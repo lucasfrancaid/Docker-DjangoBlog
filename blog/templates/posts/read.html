@@ -16,8 +16,10 @@
     <md-block>{{ post.body }}</md-block>
 
     <div class="post-author">
-        <b>Author: {{ post.author }}</b>
+        <b>{{ post.author }}</b>
+        {% if request.user.is_superuser %}
         <a class="btn btn-primary" href="{% url 'update_post' post.id %}">Edit</a>
+        {% endif %}
         <p>Last update: {{ post.updated_at }} | Created at: {{ post.created_at }}</p>
     </div>
 

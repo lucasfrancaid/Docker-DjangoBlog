@@ -7,10 +7,10 @@ COPY poetry.lock pyproject.toml ./
 RUN pip install -U pip && \
     pip install poetry
 
-EXPOSE 8000
-
 RUN poetry install --without=dev
 
 COPY . .
 
-CMD [ "poetry", "run", "python", "manage.py", "runserver" ]
+EXPOSE 8080
+
+CMD [ "poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8080" ]
