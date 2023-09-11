@@ -9,7 +9,7 @@
     border-color: #8fb7a8;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active{
+.btn-primary:not(:disabled):not(.disabled):active {
     background-color: #092e20;
     border-color: #8fb7a8;
 }
@@ -27,7 +27,7 @@
     border-color: #f56b6b;
 }
 
-.btn-primary-delete:not(:disabled):not(.disabled):active{
+.btn-primary-delete:not(:disabled):not(.disabled):active {
     background-color: #dd2323;
     border-color: #f56b6b;
 }
@@ -84,10 +84,11 @@
     margin: 32px auto;
     margin-right: 45px;
 }
+
 .container .card-index ul {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-gap: 10px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
     list-style: none;
 }
 
@@ -97,6 +98,21 @@
     padding: 10px;
     border-radius: 8px;
     position: relative;
+}
+
+.container .card-index .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card-index .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.container .card-index .btn-primary {
+    margin-top: auto;
 }
 
 .container ul li button {

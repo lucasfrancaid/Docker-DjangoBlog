@@ -19,7 +19,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="card-text">{{ post.subtitle|truncatechars:40 }}</p>
-            <a href="{% url 'detail_post' post.id %}" class="btn btn-primary">See more</a>
+            <a href="{% url 'detail_post' post.id %}" class="align-self-end btn btn-primary">See more</a>
           </div>
         </div>
       </li>
