@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from posts.models import Post, View
+from blog.apps.posts.models import Post, View
 
 admin.site.register(Post)
 admin.site.register(View)

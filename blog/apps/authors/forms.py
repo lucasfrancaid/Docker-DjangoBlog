@@ -1,5 +1,6 @@
 from django.forms import ModelForm
-from authors.models import Author
+
+from blog.apps.authors.models import Author
 
 
 class AuthorForm(ModelForm):

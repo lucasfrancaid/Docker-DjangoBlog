@@ -1,6 +1,6 @@
 from django.db import models
 
-from authors.models import Author
+from blog.apps.authors.models import Author
 
 
 class Post(models.Model):

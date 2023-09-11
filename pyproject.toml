@@ -2,7 +2,7 @@
 name = "django-blog"
 version = "0.1.0"
 description = ""
-authors = ["Lucas FRrança <lucasfrancaid@gmail.com>"]
+authors = ["Lucas França <lucasfrancaid@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -12,9 +12,46 @@ psycopg2-binary = "^2.9.7"
 django-bootstrap-form = "^3.4"
 requests = "^2.31.0"
 
-
 [tool.poetry.group.dev.dependencies]
+pre-commit = "^3.4.0"
 pytest = "^7.4.2"
+ruff = "^0.0.287"
+
+[tool.ruff]
+src = ['blog', 'tests']
+select = ['E', 'F', 'B', 'I', 'N', 'UP', 'PT', 'A', 'ARG']
+
+fixable = ["ALL"]
+unfixable = []
+
+exclude = [
+    'README.md',
+    'poetry.lock',
+    'pyproject.toml',
+    'venv',
+    '.git',
+    '.gitignore',
+    '.mypy_cache',
+    '.pre-commit-config.yaml',
+    '.ruff_cache',
+    '.venv',
+    '.env',
+]
+extend-exclude = ['migrations/*.py']
+
+line-length = 100
+show-source = true
+
+[tool.ruff.flake8-quotes]
+inline-quotes = 'double'
+multiline-quotes = 'double'
+
+[tool.ruff.isort]
+known-local-folder = ["blog", "tests"]
+combine-as-imports = true
+
+[tool.ruff.pyupgrade]
+keep-runtime-typing = true
 
 [build-system]
 requires = ["poetry-core"]

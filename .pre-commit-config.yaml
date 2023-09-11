@@ -1,0 +1,32 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pytest
+        name: run tests
+        entry: pytest
+        language: python
+        additional_dependencies: [ pre-commit ]
+        pass_filenames: false
+
+  - repo: local
+    hooks:
+      - id: ruff
+        language: system
+        name: ruff
+        entry: ruff --exit-non-zero-on-fix
+        types: [ python ]
+
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v2.0.2
+    hooks:
+      - id: autopep8
+        args: [ --in-place, --aggressive, --max-line-length=100 ]
+        exclude: migrations/
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.5.1
+    hooks:
+      - id: mypy
+        args: [ --ignore-missing-imports ]
+        exclude: migrations/
+        additional_dependencies: ['types-requests']

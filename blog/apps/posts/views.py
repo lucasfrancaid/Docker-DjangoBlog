@@ -1,11 +1,11 @@
+import requests
 from django.conf import settings
 from django.urls import reverse_lazy
 from django.views import generic
-import requests
 
+from blog.apps.posts.forms import PostForm
+from blog.apps.posts.models import Post, View
 from blog.mixins import AdminPermissionRequiredMixin
-from posts.models import Post, View
-from posts.forms import PostForm
 
 
 class ListView(AdminPermissionRequiredMixin, generic.ListView):

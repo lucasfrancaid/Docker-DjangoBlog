@@ -1,8 +1,8 @@
 from django.urls import reverse_lazy
 from django.views import generic
 
-from authors.models import Author
-from authors.forms import AuthorForm
+from blog.apps.authors.forms import AuthorForm
+from blog.apps.authors.models import Author
 from blog.mixins import AdminPermissionRequiredMixin
 
 
